@@ -1,4 +1,4 @@
-import React,{useCallback,useState} from 'react';
+import React,{useState} from 'react';
 import InputField from '../Custom/InputField';
 import  './Login.css'
 enum LoginForm{
@@ -6,7 +6,7 @@ enum LoginForm{
     passWord='passWord'
 }
 const Login=()=>{
-    const [loginState,setLoginState]=useState({userName:'karthi',passWord:''})
+    const [loginState,setLoginState]=useState({userName:'',passWord:''})
     console.log(loginState);
     return(
        <div class="center">
@@ -18,7 +18,7 @@ const Login=()=>{
         <div className="pass">Forgot Password?</div>
         <input type="submit" value="Login"/>
         <div className="signup_link">
-          Not a member? <a href="#">Signup</a>
+          Not a member? <a href="https://www.w3schools.com/">Signup</a>
         </div>
         </div>
     </div>
