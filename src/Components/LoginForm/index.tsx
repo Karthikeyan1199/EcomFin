@@ -6,7 +6,7 @@ enum LoginForm{
     passWord='passWord'
 }
 const Login=()=>{
-    const [loginState,setLoginState]=useState({userName:'karthi',passWord:''})
+    const [loginState,setLoginState]=useState({userName:'',passWord:''})
     console.log(loginState);
     return(
        <div class="center">
